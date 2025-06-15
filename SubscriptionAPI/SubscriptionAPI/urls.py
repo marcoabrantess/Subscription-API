@@ -7,8 +7,8 @@ from Subscription.api.viewsets import SubscriptionViewSet
 
 router = routers.DefaultRouter()
 router.register(r'customers', CustomerViewSet, basename='Customer')
-router.register(r'subscriptionPlan', SubscriptionPlanViewSet, basename='SubscriptionPlan')
-router.register(r'subscription', SubscriptionViewSet, basename='Subscription')
+router.register(r'plans', SubscriptionPlanViewSet, basename='SubscriptionPlan')
+router.register(r'subscriptions', SubscriptionViewSet, basename='Subscription')
 
 urlpatterns = [
     path('api/', include(router.urls)),
